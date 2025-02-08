@@ -12,7 +12,7 @@ $ KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
 
 $ bin/kafka-storage.sh format --standalone -t $KAFKA_CLUSTER_ID -c config/kraft/server.properties
 
-$ bin/kafka-storage.sh format --standalone -t $KAFKA_CLUSTER_ID -c config/kraft/server.properties
+$ kafka_2.13-3.4.0 % kafka-server-start.sh config/kraft/server.properties
 
 Get the Docker image:
 
